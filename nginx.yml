@@ -6,6 +6,7 @@ services:
     volumes:
      - ./grype-service:/etc/nginx/templates/grype
      - ./trivy-service:/etc/nginx/templates/trivy
+     - ./osv-scanner-service:/etc/nginx/templates/osv-scanner
      - ./conf.d:/etc/nginx/conf.d/
     ports:
      - "8080:80"
